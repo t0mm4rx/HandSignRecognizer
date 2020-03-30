@@ -13,10 +13,10 @@ I have planned to recognize following signs:
 
 The program works three steps:
 
-- 1) You need to record training data by running the capture.py script. Be sure to create needed folders:
+- **1.** You need to record training data by running the capture.py script. Be sure to create needed folders:
   - data/ok
   - data/good
   - data/bad
   - data/v
   - data/hand
-- 2) Train the model by running train.py
+- **2.** Train the model by running train.py
