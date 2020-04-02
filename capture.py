@@ -6,7 +6,7 @@ import random
 cap = cv2.VideoCapture(0)
 
 state = 0
-states = ['', 'ok', '', 'good', '', 'bad', '', 'v', '', 'hand']
+states = ['', 'ok', '', 'good', '', 'bad', '', 'v', '', 'hand', '', 'none']
 
 inputs = {
     'ok': [],
@@ -14,6 +14,7 @@ inputs = {
     'bad': [],
     'v': [],
     'hand': [],
+    'none': []
 }
 
 while(True):
@@ -35,7 +36,7 @@ while(True):
 cap.release()
 cv2.destroyAllWindows()
 
-if (state >= 10):
+if (state >= 12):
     for sign in inputs:
         for image in inputs[sign]:
             url = "./data/{}/{}-{}.jpg".format(sign, time.time(), random.random())

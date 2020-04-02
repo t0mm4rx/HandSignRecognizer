@@ -19,4 +19,5 @@ The program works three steps:
   - data/bad
   - data/v
   - data/hand
+  - data/none
 - **2.** Train the model by running train.py
